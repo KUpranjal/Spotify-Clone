@@ -112,9 +112,9 @@ nextBtn.addEventListener("click", () => {
     playBtn.classList.remove("fa-circle-play")
     playBtn.classList.add("fa-circle-pause")
     currObj = playlist[currIdx]
-    currSong = new Audio(`./Media/${currObj.trackName}.mp3`)
+    currSong = new Audio(`./media/${currObj.trackName}.mp3`)
     currSong.play()
-    imageTag.src = "./Media/" + currObj.img
+    imageTag.src = "./media/" + currObj.img
     nameTag.innerText = currObj.displayName
 
 
@@ -133,9 +133,9 @@ prevBtn.addEventListener("click", () => {
     playBtn.classList.remove("fa-circle-play")
     playBtn.classList.add("fa-circle-pause")
     currObj = playlist[currIdx]
-    currSong = new Audio(`./Media/${currObj.trackName}.mp3`)
+    currSong = new Audio(`./media/${currObj.trackName}.mp3`)
     currSong.play()
-    imageTag.src = "./Media/" + currObj.img
+    imageTag.src = "./media/" + currObj.img
     nameTag.innerText = currObj.displayName
 
 
