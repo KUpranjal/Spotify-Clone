@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+
+    <link rel="icon" type="image/x-icon" href="spotify-brands-solid-full.svg" />
+
+ 
+    <link rel="stylesheet" href="style.css" />
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <header id="parent">
+        <a href="#"><i class="fa-brands fa-spotify"></i></a>
+        <div id="search">
+             <div id="logo-text">SPOTIFY</div>
+            <input id="search-input" type="text" placeholder="Search music..." />
+        </div>
+    </header>
+
+    <div id="outer">
+
+    <div id="left">
+        
+        <div id="music-player">
+            <img id="displayImg" style="width: 90%;" src="" alt="">
+            <p style="font-size: 32px;" id="displayName"></p>
+            <input value="0" id="slider" style="width: 90%;" type="range">
+            <div>
+                <i id="prev" style="font-size: 50px;" class=" fa-solid fa-backward-step"></i>
+                <i id="play" style="font-size: 50px;" class=" fa-solid fa-circle-play"></i>
+                <i id="next" style="font-size: 50px;" class=" fa-solid fa-forward-step"></i>
+            </div>
+            <input value="20" step="1" id="volume-slider" style="width: 90%;" type="range">
+            
+        </div>
+
+    </div>
+    
+    <div id="right">
+            
+            <h3>Playlist</h3>
+       
+    </div>
+
+  </div>
+
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
